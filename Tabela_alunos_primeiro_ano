@@ -4,13 +4,10 @@ CREATE TABLE alunos (
     idade NUMBER CHECK (idade >= 6 AND idade <= 18),
     peso NUMBER CHECK (peso > 0),
     serie VARCHAR2(20),
-    escola VARCHAR2(100)
-    cidade VARCHAR2(50)
+    escola VARCHAR2(100)   
 );
 SELECT * FROM alunos;
-
 INSERT INTO alunos (nome, idade, peso, serie, escola) VALUES ('Ana Silva', 7, 20.5, '1º ano', 'Escola ABC');
-SELECT * FROM alunos;
 INSERT INTO alunos (nome, idade, peso, serie, escola) VALUES ('Bruno Costa', 7, 22.0, '1º ano', 'Escola ABC'); 
 INSERT INTO alunos (nome, idade, peso, serie, escola) VALUES ('Carlos Lima', 7, 24.3, '1º ano', 'Escola ABC'); 
 INSERT INTO alunos (nome, idade, peso, serie, escola) VALUES ('Diana Souza', 7, 23.1, '1º ano', 'Escola ABC'); 
@@ -21,3 +18,4 @@ INSERT INTO alunos (nome, idade, peso, serie, escola) VALUES ('Helena Martins', 
 INSERT INTO alunos (nome, idade, peso, serie, escola) VALUES ('Igor Santos', 7, 20.2, '1º ano', 'Escola ABC'); 
 INSERT INTO alunos (nome, idade, peso, serie, escola) VALUES ('Julia Fernandes', 7, 23.4, '1º ano', 'Escola ABC');
 SELECT * FROM alunos;
+
